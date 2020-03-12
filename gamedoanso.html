@@ -10,6 +10,9 @@
     function random() {
         let a=prompt('mời nhập 1 số (>10)');
         a= parseInt(a);
+        if (a<10) {
+            let a=prompt('số phải >= 10, mời nhập lại')
+        }
         let number=parseInt(Math.random()*a);
         console.log(number);
         let i=0;

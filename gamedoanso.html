@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<button onclick="random()">Chơi</button>
+<script>
+    function random() {
+        let a=prompt('mời nhập 1 số (>10)');
+        a= parseInt(a);
+        let number=parseInt(Math.random()*a);
+        console.log(number);
+        let i=0;
+        for (i=1;i<=3;i++) {
+            let b=prompt(' mời bạn đoán thử');
+            if (b == number) {
+                alert('Bạn đã đoán đúng, chúc mừng');
+                break;
+            } else {
+                if (b > number) {
+                    alert('Bạn vừa đoán 1 số lớn hơn số random')
+                } else {
+                    alert('bạn vừa đoán 1 số nhỏ hơn số random')
+                }
+            }
+        }
+        alert('Con số random là : ' + number);
+
+    }
+</script>
+
+</body>
+</html>

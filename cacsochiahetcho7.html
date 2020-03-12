@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>các số chia hết cho 7</title>
+
+</head>
+<body>
+<script>
+    let n=1;
+    let total=0;
+    let flag=false;
+    for (n=1;n<211;n++) {
+        if (n%7 == 0) {
+            flag = true;
+        }
+        if (flag==true) {
+            total += n;
+            flag=false;
+        }
+    }
+    document.write('tổng 30 số đầu tiên chia hết cho 7 là : ' +total);
+</script>
+
+</body>
+</html>

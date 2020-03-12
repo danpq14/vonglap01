@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=1;
+    let b=0;
+    let t;
+    let total=0;
+    let ketqua1= '20 số đầu tiên của dãy số Fibonacci là : 0,';
+    for (;a<6766;) {
+        t=a;
+        a= a+b;
+        b=t;
+        ketqua1 += t + ',';
+        total += t;
+    }
+    document.write(ketqua1 + '<br>');
+    document.write('tổng của 20 số fibonacci đầu tiền là ' +total);
+</script>
+
+</body>
+</html>
